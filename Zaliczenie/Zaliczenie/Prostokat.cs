@@ -8,8 +8,15 @@ namespace Zaliczenie
 {
     class Prostokat
     {
-       
-       
+
+        /// <summary>
+        /// metoda wypisujaca punkty prastokata
+        /// </summary>
+        /// <param name="x">wspolrzedna x punktu zaczepienia</param>
+        /// <param name="y">wspolrzedna y punktu zaczepienia</param>
+        /// <param name="dlugosc">dlugosc prostokata</param>
+        /// <param name="szerokosc">szerokosc prostokata</param>
+        /// <returns>tablica punktow</returns>
         public double[,] drawProstokat (double x, double y, double dlugosc, double szerokosc)
         {
             //Wspólrzedne kartezjanskie
@@ -46,12 +53,22 @@ namespace Zaliczenie
             return punkty;
         }
 
+        /// <summary>
+        /// Metoda do przesuwania prostokata o wektor
+        /// </summary>
+        /// <param name="wektor">wektor przesuniecia</param>
+        /// <returns>punkty przesunięte</returns>
         double[,] Przesun(double[] wektor)
         {
             double[,] punkty_przes = { { 0 } };
             return punkty_przes;
         }
 
+        /// <summary>
+        /// metoda do obracania prostokata
+        /// </summary>
+        /// <param name="kat">kat obrotu</param>
+        /// <returns>punkty obrocone</returns>
         double[,] Obroc(double kat)
         {
             double[,] punkty_obr = { { 0 } };

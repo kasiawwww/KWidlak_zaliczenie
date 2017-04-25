@@ -8,6 +8,14 @@ namespace Zaliczenie
 {
     class TrojkatRown
     {
+        /// <summary>
+     /// Metoda do rysowania trojkata rownoramiennego
+     /// </summary>
+     /// <param name="x">wspolrzedna x punktu zaczepienia</param>
+     /// <param name="y">wspolrzedna y punktu zaczepienia</param>
+     /// <param name="dl_boku"></param>
+     /// <param name="alfa">kat pomiedzy podstawa a ramieniem</param>
+     /// <returns></returns>
         public double[,] drawTrojkat(double x, double y, double dl_boku, double alfa)
         {
             //Wspólrzedne kartezjańskie
@@ -41,12 +49,22 @@ namespace Zaliczenie
             return punkty;
         }
 
+        /// <summary>
+        /// Metoda do przesuwania figury
+        /// </summary>
+        /// <param name="wektor"></param>
+        /// <returns>punkty przesuniete</returns>
         double[,] Przesun(double[] wektor)
         {
             double[,] punkty_przes = { { 0 } };
             return punkty_przes;
         }
 
+        /// <summary>
+        /// Metoda do obracania figury
+        /// </summary>
+        /// <param name="kat"></param>
+        /// <returns>punkty obrocone</returns>
         double[,] Obroc(double kat)
         {
             double[,] punkty_obr = { { 0 } };
